@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{ margin: 0; padding: 0;}
+			body{ padding: 50px;}
+			.acc1{ width: 500px;}
+			.acc_title{ height: 35px; line-height: 35px; border: 1px solid #BBBBBB; text-align: center;}
+			.acc_title.active{ background-color:#f80; color: #FFF;}
+			.acc_content{ height: 350px;border: 1px solid #BBBBBB;transition: all 0.5s;-webkit-transition: all 0.5s;}
+			.acc_content.hide{height: 0px;border:0px solid transparent; overflow: hidden;}
+			
+			
+
+		</style>
+		<script src="js2-1-2according.js"></script>
+		<script>
+window.onload=init;
+function init(){
+		new according({dom:"acc1",title:"acc_title",content:"acc_content",index:0})
+		
+		
+//	function according(obj){
+//		this.obj=obj;
+//		this.dom=document.getElementsByClassName(this.obj.dom)[0];
+//		this.titles=this.dom.getElementsByClassName(this.obj.title);
+//		this.contents=this.dom.getElementsByClassName(this.boj.content);
+//		this.index=this.obj.index;
+//		this.leng=this.titles.length;
+//		this.h_title;
+//		this.h_content;
+//		this.init();
+//		this.binddom();
+//	}
+//	according.prototype.init=function(){
+//		for(var i=0;i<this.leng;i++){
+//			if(i==this.index){
+//				this.titles[i].className=this.obj.title+" active";
+//				this.contents[i].className=this.obj.content;
+//				this.h_title=this.titles[i];
+//				this.h_content=this.contents[i];
+//			}else{
+//				this.titles[i].className=this.obj.title;
+//				this.contents[i].className=this.obj.content+" hide";
+//			}
+//			
+//		}
+//	}
+//	according.prototype.binddom=function(){
+//		var main=this;
+//		for(var i=0;i<main.leng;i++){
+//			(function(){
+//				var j=i;
+//				main.titles[i].onclick=function(){
+////					if(main.titles[i]==main.h_title){return;}
+//					main.titles[i].className=main.obj.title+" active";
+//					main.contents[i].className=main.obj.content;
+//					main.h_title.className=main.obj.title;
+//					main.h_content.className=main.obj.content+" hide";
+//					main.h_title=main.titles[i];
+//					main.h_content=main.contents[i];	
+//				}
+//			}())
+//		}
+//	}
+//	new according({dom:"acc1",title:"acc_title",content:"acc_content",index:0})
+	
+	
+	
+	
+}
+		</script>
+	</head>
+	<body>
+		<div class="acc1">
+				<h3 class="acc_title">标题1</h3>
+				<div class="acc_content">内容1</div>
+				<h3 class="acc_title">标题2</h3>
+				<div class="acc_content">内容2</div>
+				<h3 class="acc_title">标题3</h3>
+				<div class="acc_content">内容3</div>
+		</div>
+	</body>
+</html>
