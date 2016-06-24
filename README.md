@@ -1,5 +1,6 @@
 # according
 可以折叠的手风琴-原生态JS组件
+# 插件演示[演示效果Demo](http://luxingxian007.github.io/according/)
 # 用法
 ## Step1 引用插件
 ~~~
